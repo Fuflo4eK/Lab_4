@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#define _CRT_SECURE_NO_WARNINGS
+int main() {
+	setlocale(LC_CTYPE, "RUS");
+    int a, b, c;
+    puts("Введите массу каждого элемента: ");
+    scanf("%d %d %d", &a, &b, &c);
+    if (a % 3 == 0 && b % 3 == 0 && c % 3 == 0) {
+        printf("При массе %d первого элемента, %d массе второго элемента и %d массе третьего элемента реакция пройдет");
+    }
+    else{
+        printf("При массе %d первого элемента, %d массе второго элемента и %d массе третьего элемента реакция не пройдет");
+    }
+
+    return 0;
+}
