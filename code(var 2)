@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#define _CRT_SECURE_NO_WARNINGS
+int main() {
+  int a, b, c;
+  int res;
+    printf("=== Возможна ли реакция? ===\n");
+    printf("Введите три целых числа (массы каждого элемента): ");
+    scanf("%d %d %d", &a, &b, &c);
+    res = (a % 3 == 0 && b % 3 == 0 && c % 3 == 0);
+    printf("Реакция пойдет (1 - да, 0 - нет): %d\n", res);
+    return 0;
+}
